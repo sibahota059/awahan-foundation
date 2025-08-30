@@ -1,0 +1,61 @@
+/* StatsSection Component Styles */
+.stats-section {
+  padding: 50px 0;
+  background: linear-gradient(
+    rgba(11, 7, 6, 0.8), 
+    rgba(11, 7, 6, 0.8)
+  ), #2e8094;
+  /* If you want to add a background image later, use: */
+  /* background-image: linear-gradient(rgba(11,7,6,0.8), rgba(11,7,6,0.8)), url('../../../public/images/stats-bg.jpg'); */
+}
+
+.stats-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stat-item {
+  flex: 1;
+  text-align: center;
+  padding: 0 24px;
+  border-right: 2px solid rgba(255,255,255,0.2);
+}
+
+.stat-item:last-child {
+  border-right: none;
+}
+
+.stat-item h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.stat-item p {
+  font-size: 20px;
+  color: #e6e6e6;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stats-grid {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .stat-item {
+    border-right: none;
+    border-bottom: 2px solid rgba(255,255,255,0.2);
+    padding-bottom: 30px;
+    width: 100%;
+  }
+  
+  .stat-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}

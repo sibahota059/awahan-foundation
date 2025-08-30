@@ -1,0 +1,141 @@
+.hero {
+  position: relative;
+}
+
+.hero-slider {
+  height: 756px;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.slides-container {
+  display: flex;
+  transition: transform 0.5s ease;
+  height: 100%;
+}
+
+.slide {
+  min-width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.slide.active {
+  display: flex !important;
+}
+
+.slide::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+
+
+.slide-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+
+
+.slider-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  background: rgba(255,255,255,0.2);
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  transition: all 0.3s;
+  z-index: 2;
+}
+
+.slider-nav:hover {
+  background: rgba(255,255,255,0.3);
+}
+
+.slider-nav.prev {
+  left: 13px;
+}
+
+.slider-nav.next {
+  right: 13px;
+}
+
+.slider-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 17px;
+  z-index: 2;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ddd;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.dot.active {
+  width: 18px;
+  height: 18px;
+  background: #1669b1;
+}
+
+.hero-actions {
+  display: flex;
+  height: 110px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.action-card {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.action-card.donate {
+  background: #3ba5be;
+}
+
+.action-card.join {
+  background: #3593aa;
+}
+
+.action-card.involved {
+  background: #157991;
+}
+
+.action-card:hover {
+  transform: translateY(-2px);
+}
+
+.action-card h3 {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+}

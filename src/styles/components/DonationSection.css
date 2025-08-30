@@ -1,0 +1,167 @@
+.donation-section {
+  padding: 40px 0;
+  background: #f9fafb;
+}
+
+.donation-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.donation-cards-wrapper {
+  display: flex;
+  gap: 24px;
+}
+
+.donation-card {
+  width: 410px;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(33,52,48,0.08);
+  transition: all 0.3s;
+}
+
+.donation-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(33,52,48,0.15);
+}
+
+.donation-image {
+  height: 250px;
+  background: linear-gradient(135deg, #3aa4be, #2e8094);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.category-tag {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #2e8094;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.donation-content {
+  padding: 30px;
+}
+
+.donation-content h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #1d2130;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.donation-content p {
+  font-size: 14px;
+  color: #6f7775;
+  margin-bottom: 20px;
+}
+
+.progress-wrapper {
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.progress-info {
+  margin-bottom: 8px;
+  color: #2e8094;
+  font-weight: 500;
+}
+
+.progress-bar {
+  height: 8px;
+  background: white;
+  border-radius: 50px;
+  margin-bottom: 10px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #2e8094;
+  border-radius: 50px;
+  transition: width 1s ease;
+}
+
+.donation-stats {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.raised {
+  font-weight: 500;
+  color: #1d2130;
+}
+
+.goal {
+  color: #6f7775;
+  text-align: right;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.carousel-dots .dot {
+  width: 10px;
+  height: 10px;
+  background: #ddd;
+  border-radius: 50%;
+  display: inline-block;
+  transition: all 0.3s;
+}
+
+.carousel-dots .dot.active {
+  width: 18px;
+  height: 18px;
+  background: #2e8094;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+  }
+  
+  .about-image {
+    flex: 1;
+    width: 100%;
+  }
+  
+  .stats-grid {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .stat-item {
+    border-right: none;
+    border-bottom: 2px solid rgba(255,255,255,0.2);
+    padding-bottom: 30px;
+  }
+  
+  .stat-item:last-child {
+    border-bottom: none;
+  }
+  
+  .programs-carousel {
+    flex-direction: column;
+  }
+  
+  .donation-cards-wrapper {
+    flex-direction: column;
+  }
+}
