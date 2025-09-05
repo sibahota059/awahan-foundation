@@ -317,6 +317,135 @@ const mockData = {
     title: "Raise Your Hands And Help Those Who Need Your Help",
     buttonText: "Donate Now",
     link: "/donate"
+  },
+  impact: {
+    title: "Our Impact",
+    subtitle: "Making a difference in communities across India",
+    impacts: [
+      {
+        id: 1,
+        icon: "school",
+        number: "50,000+",
+        label: "Children Educated",
+        description: "Providing quality education to underprivileged children"
+      },
+      {
+        id: 2,
+        icon: "medical",
+        number: "1,00,000+",
+        label: "Health Checkups",
+        description: "Free medical camps and health services provided"
+      },
+      {
+        id: 3,
+        icon: "tree",
+        number: "25,000+",
+        label: "Trees Planted",
+        description: "Contributing to environmental conservation"
+      },
+      {
+        id: 4,
+        icon: "people",
+        number: "500+",
+        label: "Villages Reached",
+        description: "Transforming rural communities across states"
+      }
+    ]
+  },
+  causes: {
+    title: "Our Focus Areas",
+    subtitle: "Working towards sustainable development goals",
+    causes: [
+      {
+        id: 1,
+        icon: "education",
+        title: "Quality Education",
+        description: "Ensuring inclusive and equitable quality education for all children",
+        link: "/causes/education"
+      },
+      {
+        id: 2,
+        icon: "health",
+        title: "Health & Wellness",
+        description: "Promoting healthy lives and well-being for all at all ages",
+        link: "/causes/health"
+      },
+      {
+        id: 3,
+        icon: "environment",
+        title: "Environmental Protection",
+        description: "Taking urgent action to combat climate change and its impacts",
+        link: "/causes/environment"
+      },
+      {
+        id: 4,
+        icon: "women",
+        title: "Women Empowerment",
+        description: "Achieving gender equality and empowering all women and girls",
+        link: "/causes/women"
+      },
+      {
+        id: 5,
+        icon: "poverty",
+        title: "Poverty Alleviation",
+        description: "Ending poverty in all its forms everywhere",
+        link: "/causes/poverty"
+      },
+      {
+        id: 6,
+        icon: "community",
+        title: "Community Development",
+        description: "Building resilient infrastructure and sustainable communities",
+        link: "/causes/community"
+      }
+    ]
+  },
+  testimonials: {
+    title: "What People Say",
+    subtitle: "Hear from those whose lives we've touched",
+    testimonials: [
+      {
+        id: 1,
+        text: "Aahwahan Foundation has transformed our village. Their education program gave my daughter the opportunity to pursue her dreams. Today, she is a teacher inspiring other children.",
+        name: "Sunita Devi",
+        designation: "Parent, Bihar",
+        image: "/images/testimonial-1.jpg"
+      },
+      {
+        id: 2,
+        text: "The healthcare camps organized by Aahwahan saved my life. I received timely treatment for my condition which I couldn't afford otherwise. I'm grateful for their selfless service.",
+        name: "Ramesh Kumar",
+        designation: "Beneficiary, Uttar Pradesh",
+        image: "/images/testimonial-2.jpg"
+      },
+      {
+        id: 3,
+        text: "As a volunteer with Aahwahan, I've witnessed the incredible impact of collective effort. Every project brings positive change and hope to communities that need it most.",
+        name: "Dr. Priya Sharma",
+        designation: "Volunteer Doctor",
+        image: "/images/testimonial-3.jpg"
+      }
+    ]
+  },
+  partners: {
+    title: "Our Partners",
+    subtitle: "Collaborating with organizations that share our vision",
+    partners: [
+      { id: 1, name: "Partner 1", logo: "/images/partner-1.png" },
+      { id: 2, name: "Partner 2", logo: "/images/partner-2.png" },
+      { id: 3, name: "Partner 3", logo: "/images/partner-3.png" },
+      { id: 4, name: "Partner 4", logo: "/images/partner-4.png" },
+      { id: 5, name: "Partner 5", logo: "/images/partner-5.png" },
+      { id: 6, name: "Partner 6", logo: "/images/partner-6.png" }
+    ]
+  },
+  newsletter: {
+    title: "Stay Connected",
+    description: "Subscribe to our newsletter for updates on our projects and how you can make a difference",
+    placeholder: "Enter your email address",
+    buttonText: "Subscribe",
+    successMessage: "Thank you for subscribing!",
+    errorMessage: "Please enter a valid email address."
   }
 };
 

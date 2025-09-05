@@ -1,0 +1,84 @@
+.causes-section {
+  padding: 80px 0;
+  background-color: #fff;
+}
+
+.causes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.cause-card {
+  padding: 40px 30px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.cause-card:hover {
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+.cause-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 25px;
+  background: #007bff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.cause-card:hover .cause-icon {
+  background: #0056b3;
+}
+
+.cause-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.cause-description {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.cause-link {
+  font-size: 16px;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.cause-link:hover {
+  color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .causes-section {
+    padding: 60px 0;
+  }
+  
+  .causes-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .cause-card {
+    padding: 30px 20px;
+  }
+}

@@ -4,6 +4,8 @@ import homeApi from '../api/homeApi';
 // Import all components
 import HeroSection from '../components/home/HeroSection';
 import AboutSection from '../components/home/AboutSection';
+import ImpactSection from '../components/home/ImpactSection';
+import CausesSection from '../components/home/CausesSection';
 import ProgramsSection from '../components/home/ProgramsSection';
 import EducationSection from '../components/home/EducationSection';
 import DonateCauseSection from '../components/home/DonateCauseSection';
@@ -14,11 +16,14 @@ import AchievementsSection from '../components/home/AchievementsSection';
 import EnvironmentSection from '../components/home/EnvironmentSection';
 import InitiativesSection from '../components/home/InitiativesSection';
 import CommunitySection from '../components/home/CommunitySection';
+import TestimonialsSection from '../components/home/TestimonialsSection';
 import VolunteerSection from '../components/home/VolunteerSection';
 import GetInvolvedSection from '../components/home/GetInvolvedSection';
 import BlogsSection from '../components/home/BlogsSection';
 import MediaSection from '../components/home/MediaSection';
 import ProductsSection from '../components/home/ProductsSection';
+import PartnersSection from '../components/home/PartnersSection';
+import NewsletterSection from '../components/home/NewsletterSection';
 import PolicySection from '../components/home/PolicySection';
 
 const HomePage = () => {
@@ -73,6 +78,8 @@ const HomePage = () => {
     <div className="home-page">
       <HeroSection data={homeData.hero} />
       <AboutSection data={homeData.about} />
+      <ImpactSection data={homeData.impact} />
+      <CausesSection data={homeData.causes} />
       <ProgramsSection data={homeData.programs} />
       <EducationSection data={homeData.education} />
       <DonateCauseSection data={homeData.donateCause} />
@@ -83,11 +90,14 @@ const HomePage = () => {
       <EnvironmentSection data={homeData.environment} />
       <InitiativesSection data={homeData.initiatives} />
       <CommunitySection data={homeData.community} />
+      <TestimonialsSection data={homeData.testimonials} />
       <VolunteerSection data={homeData.volunteer} />
       <GetInvolvedSection data={homeData.involved} />
       <BlogsSection data={homeData.blogs} />
       <MediaSection data={homeData.media} />
       <ProductsSection data={homeData.products} />
+      <PartnersSection data={homeData.partners} />
+      <NewsletterSection data={homeData.newsletter} />
       <PolicySection data={homeData.policy} />
     </div>
   );
